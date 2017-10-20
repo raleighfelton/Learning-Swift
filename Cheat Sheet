@@ -1,0 +1,10 @@
+##creating cornerRadius on image
+
+@IBOutlet weak var profileImage: UIImageView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        profileImage.layer.cornerRadius = 5.0
+        profileImage.layer.masksToBounds = true
+    }
