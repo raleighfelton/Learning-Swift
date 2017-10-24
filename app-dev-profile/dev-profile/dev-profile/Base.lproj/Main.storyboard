@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -36,8 +36,8 @@
                                     <constraint firstAttribute="width" constant="100" id="wQs-1Y-vIM"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Devslopes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHW-pA-UZf">
-                                <rect key="frame" x="132" y="162" width="82" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devslopes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHW-pA-UZf">
+                                <rect key="frame" x="132" y="158.5" width="82" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -99,6 +99,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hUM-3b-h26" secondAttribute="trailing" constant="16" id="W9Z-Z1-Vly"/>
                             <constraint firstItem="54E-8Q-18i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZlN-9x-2ia"/>
                             <constraint firstItem="abP-mt-ag8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bwG-fy-Lgk"/>
+                            <constraint firstItem="bHW-pA-UZf" firstAttribute="centerY" secondItem="abP-mt-ag8" secondAttribute="centerY" id="cbD-vx-IKa"/>
                             <constraint firstItem="9fO-se-Qdv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eAO-rB-snp"/>
                             <constraint firstItem="Lb0-EU-OHz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kYm-Ak-WG8"/>
                             <constraint firstItem="hUM-3b-h26" firstAttribute="top" secondItem="54E-8Q-18i" secondAttribute="bottom" constant="16" id="lEE-U6-B09"/>
