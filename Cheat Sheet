@@ -30,3 +30,36 @@ class CurrencyTextField: UITextField {
     }
 
 }
+
+#Hard Coded UI Design to show in interface builder
+
+@IBDesignable //set up for interface builder
+
+override func prepareForInterfaceBuilder() {
+        customizeView() //function that adds all logic for customizing view
+    }
+    
+override func awakeFromNib() {
+        super.awakeFromNib()
+        customizeView() //need to call function
+    }
+    
+ func customizeView() { //can name whatever
+        //custom code for cusomizing view
+        backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.25)
+        layer.cornerRadius = 5.0
+        textAlignment = .center
+        
+        if let p = placeholder {
+            let place = NSAttributedString(string: p, attributes: [.foregroundColor: #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)])
+            attributedPlaceholder = place
+            textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
