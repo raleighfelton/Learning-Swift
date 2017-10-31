@@ -60,8 +60,32 @@ override func awakeFromNib() {
     }
     
     
+#creating custom UIButton
+https://www.udemy.com/devslopes-ios11/learn/v4/t/lecture/7407532
+
+    class MainVC: UIViewController {
     
+    @IBOutlet weak var wageTxt: CurrencyTextField! //need to set outlet from input
+    @IBOutlet weak var priceTxt: CurrencyTextField! //need to set outlet from input
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //create new button
+        let calcBtn = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 60))
+        calcBtn.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.5624585525, blue: 0.2275139082, alpha: 1)
+        calcBtn.setTitle("Calculate", for: .normal) //*always have to have .setTitle to set the title.
+        calcBtn.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
+        calcBtn.addTarget(self, action: #selector(MainVC.calculate), for: .touchUpInside)
+        
+        wageTxt.inputAccessoryView = calcBtn
+        priceTxt.inputAccessoryView = calcBtn
+        
+    }
+    
+    @objc func calculate(){
+        print("hey we got here")
+    }
     
     
     
